@@ -1,0 +1,128 @@
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 13:03:42"}
+{"level":"error","message":"500 - Cannot read properties of undefined (reading 'catch') - /api/auth/register - POST - ::ffff:127.0.0.1\nStack: TypeError: Cannot read properties of undefined (reading 'catch')\n    at register (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\authController.ts:51:68)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 13:03:42"}
+{"level":"error","message":"500 - Cannot read properties of undefined (reading '0') - /api/auth/register - POST - ::ffff:127.0.0.1\nStack: TypeError: Cannot read properties of undefined (reading '0')\n    at register (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\authController.ts:23:51)\n    at Layer.handle [as handle_request] (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\node_modules\\express-rate-limit\\dist\\index.cjs:807:7\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\node_modules\\express-rate-limit\\dist\\index.cjs:691:5","timestamp":"2026-07-06 13:03:42"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 13:03:42"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 13:05:30"}
+{"level":"error","message":"500 - Cannot read properties of undefined (reading 'catch') - /api/auth/register - POST - ::ffff:127.0.0.1\nStack: TypeError: Cannot read properties of undefined (reading 'catch')\n    at register (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\authController.ts:51:68)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 13:05:30"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 13:05:30"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 13:08:27"}
+{"level":"error","message":"500 - Cannot read properties of undefined (reading 'catch') - /api/auth/register - POST - ::ffff:127.0.0.1\nStack: TypeError: Cannot read properties of undefined (reading 'catch')\n    at register (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\authController.ts:51:68)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 13:08:27"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 13:08:27"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 13:08:58"}
+{"level":"error","message":"500 - Cannot read properties of undefined (reading 'catch') - /api/auth/register - POST - ::ffff:127.0.0.1\nStack: TypeError: Cannot read properties of undefined (reading 'catch')\n    at register (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\authController.ts:51:68)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 13:08:58"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 13:08:58"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 13:09:59"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 13:09:59"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 172a8f10e98e62165e75229e439df445b3f3cce115efd4553a6af1ac1e9220df","timestamp":"2026-07-06 13:09:59"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 13:09:59"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 14:17:04"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 14:17:04"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 2a7958827d6a562645c6ac677d18002a101c4d0ab86f628285d75a1af122d961","timestamp":"2026-07-06 14:17:04"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 14:17:04"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 14:19:01"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 14:19:01"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 335e70632d21da3441ed97b3f6392833ae1c675fbaa37639a8c48944e88199fd","timestamp":"2026-07-06 14:19:01"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 14:19:01"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 14:19:01"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 14:55:51"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 14:55:51"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: fd58225ff79448af9a3fdd2e7e42e0b63705b78d8063d2d584c73faf33a145e8","timestamp":"2026-07-06 14:55:51"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 14:55:51"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 14:55:51"}
+{"level":"info","message":"Project updated: project123","timestamp":"2026-07-06 14:57:31"}
+{"level":"info","message":"Project deleted: project123","timestamp":"2026-07-06 14:57:31"}
+{"level":"info","message":"Client created: undefined by user: mockuser123","timestamp":"2026-07-06 14:57:34"}
+{"level":"info","message":"Client updated: client123","timestamp":"2026-07-06 14:57:35"}
+{"level":"info","message":"Client deleted: client123","timestamp":"2026-07-06 14:57:35"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 14:57:36"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 14:57:36"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: a6f0563d54b4eabd0704145b551fd7db996c93be1eb1d64d1c2d555a8245c1a7","timestamp":"2026-07-06 14:57:36"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 14:57:36"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 14:57:37"}
+{"level":"error","message":"500 - client.save is not a function - /api/clients - POST - ::ffff:127.0.0.1\nStack: TypeError: client.save is not a function\n    at createClient (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\clientController.ts:33:18)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 14:58:38"}
+{"level":"info","message":"Client updated: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 14:58:38"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 14:58:38"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 14:58:39"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 14:58:39"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 00865013eff59bb93bfd6b787bca77282682f33b0bf5c5f4e19a3b2ba86410bb","timestamp":"2026-07-06 14:58:39"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 14:58:39"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 14:58:39"}
+{"level":"error","message":"500 - client.save is not a function - /api/clients - POST - ::ffff:127.0.0.1\nStack: TypeError: client.save is not a function\n    at createClient (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\clientController.ts:33:18)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 14:59:50"}
+{"level":"info","message":"Client updated: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 14:59:50"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 14:59:51"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 14:59:52"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 14:59:52"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: fdab04d85775e6ae66808697579358fe1929f2e63c290967fc058077d5201b51","timestamp":"2026-07-06 14:59:52"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 14:59:52"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 14:59:52"}
+{"level":"error","message":"500 - project.save is not a function - /api/projects - POST - ::ffff:127.0.0.1\nStack: TypeError: project.save is not a function\n    at createProject (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\projectController.ts:33:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 14:59:57"}
+{"level":"info","message":"Project updated: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 14:59:57"}
+{"level":"info","message":"Project deleted: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 14:59:57"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 15:01:37"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 15:01:37"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 640053c4002d3fdfdd72461cf94defa69d7b673773a3578d19eb2611a7a22680","timestamp":"2026-07-06 15:01:37"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 15:01:37"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 15:01:37"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 15:02:45"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 15:02:45"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: fad7cd07a94ead169a63e5810cc93449d692d5586fedcfbcb2c3fa83c311e3be","timestamp":"2026-07-06 15:02:45"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 15:02:45"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 15:02:45"}
+{"level":"info","message":"Client created: 507f1f77bcf86cd799439011 by user: mockuser123","timestamp":"2026-07-06 15:02:49"}
+{"level":"error","message":"500 - client.save is not a function - /api/clients/507f1f77bcf86cd799439011 - PUT - ::ffff:127.0.0.1\nStack: TypeError: client.save is not a function\n    at updateClient (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\clientController.ts:134:18)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 15:02:49"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:02:49"}
+{"level":"info","message":"Project created: 507f1f77bcf86cd799439012 for client: 507f1f77bcf86cd799439011 by user: mockuser123","timestamp":"2026-07-06 15:02:50"}
+{"level":"error","message":"500 - project.save is not a function - /api/projects/507f1f77bcf86cd799439012 - PUT - ::ffff:127.0.0.1\nStack: TypeError: project.save is not a function\n    at updateProject (C:\\Users\\Saumy\\Desktop\\FreelanceFlow\\backend\\controllers\\projectController.ts:140:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-07-06 15:02:50"}
+{"level":"info","message":"Project deleted: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:02:50"}
+{"level":"info","message":"Client created: undefined by user: mockuser123","timestamp":"2026-07-06 15:03:40"}
+{"level":"info","message":"Client updated: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:03:40"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:03:40"}
+{"level":"info","message":"Project created: undefined for client: 507f1f77bcf86cd799439011 by user: mockuser123","timestamp":"2026-07-06 15:03:42"}
+{"level":"info","message":"Project updated: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:03:42"}
+{"level":"info","message":"Project deleted: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:03:42"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 15:03:43"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 15:03:43"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 879c1647d71575e688ce2f27f67ed93d3302aa0ca26285891c0c9f283e7efb09","timestamp":"2026-07-06 15:03:43"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 15:03:43"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 15:03:43"}
+{"level":"info","message":"Project created: undefined for client: 507f1f77bcf86cd799439011 by user: mockuser123","timestamp":"2026-07-06 15:35:36"}
+{"level":"info","message":"Project updated: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:35:36"}
+{"level":"info","message":"Project deleted: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:35:36"}
+{"level":"info","message":"Client created: undefined by user: mockuser123","timestamp":"2026-07-06 15:35:38"}
+{"level":"info","message":"Client updated: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:35:38"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:35:38"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 15:35:39"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 15:35:39"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 5d85dabfeac3289a83d0035becd91503bbd01a08d33edd57cbbbe640dce6442b","timestamp":"2026-07-06 15:35:39"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 15:35:39"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 15:35:39"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:47:13"}
+{"level":"info","message":"Project created: undefined for client: 507f1f77bcf86cd799439011 by user: mockuser123","timestamp":"2026-07-06 15:47:13"}
+{"level":"info","message":"Project updated: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:47:13"}
+{"level":"info","message":"Project deleted: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:47:13"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:47:14"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:47:15"}
+{"level":"info","message":"Client created: undefined by user: mockuser123","timestamp":"2026-07-06 15:47:15"}
+{"level":"info","message":"Client updated: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:47:16"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:47:16"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:47:17"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 15:47:17"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 15:47:17"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: 0167f0587baa580f33169a61b5c0f959fbaaeda75739707ace85ae8ae8575711","timestamp":"2026-07-06 15:47:17"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 15:47:17"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 15:47:17"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:57:10"}
+{"level":"info","message":"Project created: undefined for client: 507f1f77bcf86cd799439011 by user: mockuser123","timestamp":"2026-07-06 15:57:10"}
+{"level":"info","message":"Project updated: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:57:10"}
+{"level":"info","message":"Project deleted: 507f1f77bcf86cd799439012","timestamp":"2026-07-06 15:57:10"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:57:12"}
+{"level":"info","message":"Client created: undefined by user: mockuser123","timestamp":"2026-07-06 15:57:12"}
+{"level":"info","message":"Client updated: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:57:12"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-06 15:57:12"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:57:14"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-06 15:57:14"}
+{"level":"warn","message":"SMTP configuration is missing. Emails will be logged to console instead.","timestamp":"2026-07-06 15:57:14"}
+{"level":"info","message":"[MAIL MOCK] Verification email to undefined. Token: fcb1a4b284475930393197434fd7a4e162fa78206764044586d8a63792560c82","timestamp":"2026-07-06 15:57:14"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 15:57:14"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 15:57:14"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:57:15"}
