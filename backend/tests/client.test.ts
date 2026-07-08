@@ -41,10 +41,11 @@ import jwt from 'jsonwebtoken';
 describe('Client Endpoints', () => {
   let mockClient: any;
   const mockClientId = '507f1f77bcf86cd799439011';
-  const token = jwt.sign({ userId: 'mockuser123' }, process.env.JWT_SECRET || 'test_access_secret');
+  let token: string;
 
   beforeAll(() => {
     process.env.JWT_SECRET = 'test_access_secret';
+    token = jwt.sign({ userId: 'mockuser123' }, process.env.JWT_SECRET);
   });
 
   beforeEach(() => {

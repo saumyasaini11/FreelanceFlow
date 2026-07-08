@@ -126,3 +126,70 @@
 {"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-06 15:57:14"}
 {"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-06 15:57:14"}
 {"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-06 15:57:15"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-07 23:43:16"}
+{"level":"info","message":"MongoDB Connected: ac-5gs80xk-shard-00-02.utqdvfa.mongodb.net","timestamp":"2026-07-07 23:43:18"}
+{"level":"info","message":"Starting background cron jobs...","timestamp":"2026-07-07 23:43:18"}
+{"level":"info","message":"Running cron: checkOverdueInvoices","timestamp":"2026-07-07 23:43:18"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-07-07 23:43:18"}
+{"level":"info","message":"No new overdue invoices found.","timestamp":"2026-07-07 23:43:19"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-07 23:59:28"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-07 23:59:29"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-07 23:59:30"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-07 23:59:30"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:39"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-07 23:59:46"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:46"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:46"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:46"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:46"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:46"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:47"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:47"}
+{"level":"warn","message":"Auth token verification failed: invalid signature","timestamp":"2026-07-07 23:59:47"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-07 23:59:52"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-08 00:01:14"}
+{"level":"info","message":"Project created: undefined for client: 507f1f77bcf86cd799439011 by user: mockuser123","timestamp":"2026-07-08 00:01:15"}
+{"level":"info","message":"Project updated: 507f1f77bcf86cd799439012","timestamp":"2026-07-08 00:01:15"}
+{"level":"info","message":"Project deleted: 507f1f77bcf86cd799439012","timestamp":"2026-07-08 00:01:15"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-08 00:01:22"}
+{"level":"info","message":"Client created: undefined by user: mockuser123","timestamp":"2026-07-08 00:01:22"}
+{"level":"info","message":"Client updated: 507f1f77bcf86cd799439011","timestamp":"2026-07-08 00:01:23"}
+{"level":"info","message":"Client deleted: 507f1f77bcf86cd799439011","timestamp":"2026-07-08 00:01:23"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-08 00:01:26"}
+{"level":"info","message":"User registered: undefined (undefined)","timestamp":"2026-07-08 00:01:26"}
+{"level":"info","message":"User logged in: mockuser123","timestamp":"2026-07-08 00:01:27"}
+{"level":"info","message":"User logged in via Google: mockuser123","timestamp":"2026-07-08 00:01:27"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-08 00:01:32"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-08 00:03:35"}
+{"level":"info","message":"MongoDB Connected: ac-5gs80xk-shard-00-01.utqdvfa.mongodb.net","timestamp":"2026-07-08 00:03:37"}
+{"level":"info","message":"Starting background cron jobs...","timestamp":"2026-07-08 00:03:37"}
+{"level":"info","message":"Running cron: checkOverdueInvoices","timestamp":"2026-07-08 00:03:37"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-07-08 00:03:37"}
+{"level":"info","message":"No new overdue invoices found.","timestamp":"2026-07-08 00:03:37"}
+{"level":"warn","message":"OPENAI_API_KEY not set — AI endpoints will return mock responses.","timestamp":"2026-07-08 00:04:50"}
+{"level":"info","message":"MongoDB Connected: ac-5gs80xk-shard-00-01.utqdvfa.mongodb.net","timestamp":"2026-07-08 00:04:58"}
+{"level":"info","message":"Starting background cron jobs...","timestamp":"2026-07-08 00:04:58"}
+{"level":"info","message":"Running cron: checkOverdueInvoices","timestamp":"2026-07-08 00:04:58"}
+{"level":"info","message":"Server is running in development mode on port 5000","timestamp":"2026-07-08 00:04:58"}
+{"level":"info","message":"No new overdue invoices found.","timestamp":"2026-07-08 00:04:58"}
+{"level":"info","message":"Bypassing reCAPTCHA verification in development environment.","timestamp":"2026-07-08 00:06:00"}
+{"level":"info","message":"User registered: 6a4d47100990ec6970d0412a (singhipiyu07@gmail.com)","timestamp":"2026-07-08 00:06:00"}
+{"level":"error","message":"Error sending verification email to singhipiyu07@gmail.com: connect ETIMEDOUT 18.215.44.90:2525","timestamp":"2026-07-08 00:06:19"}
+{"level":"error","message":"Error sending email to singhipiyu07@gmail.com post-registration: Failed to send verification email","timestamp":"2026-07-08 00:06:19"}
+{"level":"info","message":"Bypassing reCAPTCHA verification in development environment.","timestamp":"2026-07-08 00:06:54"}
+{"level":"info","message":"User logged in: 6a4d47100990ec6970d0412a","timestamp":"2026-07-08 00:06:58"}
+{"level":"info","message":"Client created: 6a4d49460990ec6970d0414f by user: 6a4d47100990ec6970d0412a","timestamp":"2026-07-08 00:15:27"}
+{"level":"info","message":"Project created: 6a4d497d0990ec6970d04161 for client: 6a4d49460990ec6970d0414f by user: 6a4d47100990ec6970d0412a","timestamp":"2026-07-08 00:16:21"}
+{"level":"info","message":"Project updated: 6a4d497d0990ec6970d04161","timestamp":"2026-07-08 00:16:55"}
+{"level":"info","message":"Project updated: 6a4d497d0990ec6970d04161","timestamp":"2026-07-08 00:17:18"}
+{"level":"info","message":"Time entry created: 6a4d49d70990ec6970d04187 for project: 6a4d497d0990ec6970d04161 by user: 6a4d47100990ec6970d0412a","timestamp":"2026-07-08 00:17:51"}
+{"level":"info","message":"Rate advice requested by user: 6a4d47100990ec6970d0412a","timestamp":"2026-07-08 00:20:00"}
+{"level":"info","message":"Project health scored for project: 6a4d497d0990ec6970d04161","timestamp":"2026-07-08 00:20:19"}

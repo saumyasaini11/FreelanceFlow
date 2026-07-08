@@ -4,8 +4,10 @@ import { logger } from '../utils/logger';
 export const verifyRecaptcha = async (req: Request, res: Response, next: NextFunction) => {
   const secretKey = process.env.RECAPTCHA_SECRET_KEY;
   
-  if (!secretKey || process.env.NODE_ENV === 'test') {
-    if (!secretKey && process.env.NODE_ENV !== 'test') {
+  if (!secretKey || process.env.NODE_ENV === 'test' || process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV === 'development') {
+      logger.info('Bypassing reCAPTCHA verification in development environment.');
+    } else if (!secretKey && process.env.NODE_ENV !== 'test') {
       logger.warn('RECAPTCHA_SECRET_KEY is missing from environment variables. Skipping verification.');
     }
     return next();
