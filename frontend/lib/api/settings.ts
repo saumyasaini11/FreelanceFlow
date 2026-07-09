@@ -5,6 +5,7 @@ export interface UpdateProfileInput {
   name?: string;
   bio?: string;
   avatar?: string;
+  industries?: string[];
 }
 
 export const updateProfile = async (data: UpdateProfileInput): Promise<{ success: boolean; user: UserProfile }> => {

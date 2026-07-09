@@ -27,7 +27,7 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
       });
     }
 
-    const { name, email, password } = parseResult.data;
+    const { name, email, password, industries } = parseResult.data;
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -45,6 +45,7 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
       password,
       isEmailVerified: false,
       emailVerificationToken: verificationToken,
+      industries: industries || [],
     });
 
     await user.save();
@@ -387,7 +388,7 @@ export const updateProfile = async (req: AuthRequest, res: Response, next: NextF
       });
     }
 
-    const { name, avatar, bio } = parseResult.data;
+    const { name, avatar, bio, industries } = parseResult.data;
 
     const user = await User.findById(req.user!._id);
     if (!user) {
@@ -400,6 +401,7 @@ export const updateProfile = async (req: AuthRequest, res: Response, next: NextF
     if (name !== undefined) user.name = name;
     if (avatar !== undefined) user.avatar = avatar;
     if (bio !== undefined) user.bio = bio;
+    if (industries !== undefined) user.industries = industries;
 
     await user.save();
     logger.info(`User updated profile: ${user._id}`);
@@ -413,6 +415,7 @@ export const updateProfile = async (req: AuthRequest, res: Response, next: NextF
         isEmailVerified: user.isEmailVerified,
         avatar: user.avatar,
         bio: user.bio,
+        industries: user.industries,
       },
     });
   } catch (error) {
@@ -431,6 +434,7 @@ export const getMe = async (req: AuthRequest, res: Response, next: NextFunction)
         isEmailVerified: req.user!.isEmailVerified,
         avatar: req.user!.avatar,
         bio: req.user!.bio,
+        industries: req.user!.industries,
       },
     });
   } catch (error) {

@@ -1,6 +1,8 @@
 import nodemailer from 'nodemailer';
 import { logger } from '../utils/logger';
 
+const SENDER_EMAIL = process.env.SMTP_FROM || 'no-reply@freelanceflow.app';
+
 // Setup email transporter
 const getTransporter = () => {
   const host = process.env.SMTP_HOST;
@@ -24,7 +26,6 @@ const getTransporter = () => {
     },
   });
 };
-
 export const sendVerificationEmail = async (
   email: string,
   name: string,
@@ -58,12 +59,13 @@ export const sendVerificationEmail = async (
   const transporter = getTransporter();
   if (!transporter) {
     logger.info(`[MAIL MOCK] Verification email to ${email}. Token: ${token}`);
+    logger.info(`\n\n==================================================\n[DEVELOPMENT VERIFICATION LINK]\nEmail: ${email}\nURL: ${verificationUrl}\n==================================================\n`);
     return;
   }
 
   try {
     await transporter.sendMail({
-      from: `"FreelanceFlow Support" <no-reply@freelanceflow.app>`,
+      from: `"FreelanceFlow Support" <${SENDER_EMAIL}>`,
       to: email,
       subject,
       html,
@@ -71,7 +73,11 @@ export const sendVerificationEmail = async (
     logger.info(`Verification email sent to ${email}`);
   } catch (error) {
     logger.error(`Error sending verification email to ${email}: ${(error as Error).message}`);
-    throw new Error('Failed to send verification email');
+    logger.info(`\n\n==================================================\n[DEVELOPMENT VERIFICATION LINK - SMTP FALLBACK]\nEmail: ${email}\nURL: ${verificationUrl}\n==================================================\n`);
+    // Do not crash the server or throw if in development environment so registration can still proceed
+    if (process.env.NODE_ENV !== 'development') {
+      throw new Error('Failed to send verification email');
+    }
   }
 };
 
@@ -108,12 +114,13 @@ export const sendPasswordResetEmail = async (
   const transporter = getTransporter();
   if (!transporter) {
     logger.info(`[MAIL MOCK] Password reset email to ${email}. Token: ${token}`);
+    logger.info(`\n\n==================================================\n[DEVELOPMENT PASSWORD RESET LINK]\nEmail: ${email}\nURL: ${resetUrl}\n==================================================\n`);
     return;
   }
 
   try {
     await transporter.sendMail({
-      from: `"FreelanceFlow Support" <no-reply@freelanceflow.app>`,
+      from: `"FreelanceFlow Support" <${SENDER_EMAIL}>`,
       to: email,
       subject,
       html,
@@ -121,10 +128,12 @@ export const sendPasswordResetEmail = async (
     logger.info(`Password reset email sent to ${email}`);
   } catch (error) {
     logger.error(`Error sending password reset email to ${email}: ${(error as Error).message}`);
-    throw new Error('Failed to send password reset email');
+    logger.info(`\n\n==================================================\n[DEVELOPMENT PASSWORD RESET LINK - SMTP FALLBACK]\nEmail: ${email}\nURL: ${resetUrl}\n==================================================\n`);
+    if (process.env.NODE_ENV !== 'development') {
+      throw new Error('Failed to send password reset email');
+    }
   }
 };
-
 export const sendInvoiceCreatedEmail = async (
   email: string,
   clientName: string,
@@ -157,7 +166,7 @@ export const sendInvoiceCreatedEmail = async (
 
   try {
     await transporter.sendMail({
-      from: `"FreelanceFlow Invoicing" <invoices@freelanceflow.app>`,
+      from: `"FreelanceFlow Invoicing" <${SENDER_EMAIL}>`,
       to: email,
       subject,
       html,
@@ -199,7 +208,7 @@ export const sendInvoiceOverdueEmail = async (
 
   try {
     await transporter.sendMail({
-      from: `"FreelanceFlow Billing" <billing@freelanceflow.app>`,
+      from: `"FreelanceFlow Billing" <${SENDER_EMAIL}>`,
       to: email,
       subject,
       html,

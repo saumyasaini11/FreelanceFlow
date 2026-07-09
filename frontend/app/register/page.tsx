@@ -12,6 +12,20 @@ import { Activity, Lock, Mail, User, AlertCircle, CheckCircle2 } from 'lucide-re
 import ReCAPTCHA from 'react-google-recaptcha';
 import Script from 'next/script';
 
+const AVAILABLE_INDUSTRIES = [
+  'Web Development',
+  'Mobile Development',
+  'UI/UX Design',
+  'Graphic Design',
+  'Content Writing',
+  'Digital Marketing',
+  'Video Editing',
+  'Data Science',
+  'Cybersecurity',
+  'Consulting',
+  'Photography'
+];
+
 type RegisterFormValues = z.infer<typeof registerSchema>;
 
 export default function RegisterPage() {
@@ -89,7 +103,7 @@ export default function RegisterPage() {
     setSuccessMessage(null);
     setIsSubmitting(true);
     try {
-      const msg = await registerUser(data.name, data.email, data.password, recaptchaToken);
+      const msg = await registerUser(data.name, data.email, data.password, data.industries, recaptchaToken);
       setSuccessMessage(msg || 'Registration successful! Please check your email to verify your account.');
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Registration failed. Please try again.';
@@ -220,6 +234,25 @@ export default function RegisterPage() {
                 {errors.password && (
                   <p className="text-xs text-destructive mt-1">{errors.password.message}</p>
                 )}
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-muted-foreground block">
+                  Industries / Specializations
+                </label>
+                <div className="grid grid-cols-2 gap-2 max-h-40 overflow-y-auto border border-border rounded-lg p-3 bg-background/50">
+                  {AVAILABLE_INDUSTRIES.map((ind) => (
+                    <label key={ind} className="flex items-center gap-2 text-sm text-slate-300 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value={ind}
+                        {...formRegister('industries')}
+                        className="rounded border-border bg-slate-950 text-indigo-500 focus:ring-indigo-500"
+                      />
+                      {ind}
+                    </label>
+                  ))}
+                </div>
               </div>
 
               {recaptchaKey && (

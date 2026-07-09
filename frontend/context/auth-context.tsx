@@ -11,6 +11,7 @@ export interface UserProfile {
   isEmailVerified: boolean;
   avatar?: string;
   bio?: string;
+  industries?: string[];
   googleId?: string;
   token?: string;
 }
@@ -21,7 +22,7 @@ interface AuthContextType {
   isLoading: boolean;
   login: (email: string, password: string, recaptchaToken?: string | null) => Promise<void>;
   loginWithGoogle: (credential: string) => Promise<void>;
-  register: (name: string, email: string, password: string, recaptchaToken?: string | null) => Promise<string>;
+  register: (name: string, email: string, password: string, industries?: string[], recaptchaToken?: string | null) => Promise<string>;
   logout: () => Promise<void>;
   refreshSession: () => Promise<void>;
 }
@@ -91,10 +92,10 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     }
   };
 
-  const registerUser = async (name: string, email: string, password: string, recaptchaToken?: string | null): Promise<string> => {
+  const registerUser = async (name: string, email: string, password: string, industries?: string[], recaptchaToken?: string | null): Promise<string> => {
     setIsLoading(true);
     try {
-      const response = await api.post('/auth/register', { name, email, password, recaptchaToken });
+      const response = await api.post('/auth/register', { name, email, password, industries, recaptchaToken });
       return response.data.message || 'Verification email sent';
     } catch (error) {
       const axiosError = error as { response?: { data?: { error?: { message?: string } } } };
@@ -103,7 +104,6 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       setIsLoading(false);
     }
   };
-
   const logout = async () => {
     setIsLoading(true);
     try {
