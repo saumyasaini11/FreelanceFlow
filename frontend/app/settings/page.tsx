@@ -7,6 +7,20 @@ import { updateProfile, changePassword, deleteAccount } from '@/lib/api/settings
 import { User, Shield, AlertTriangle, Loader2, Save, LogOut } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const AVAILABLE_INDUSTRIES = [
+  'Web Development',
+  'Mobile Development',
+  'UI/UX Design',
+  'Graphic Design',
+  'Content Writing',
+  'Digital Marketing',
+  'Video Editing',
+  'Data Science',
+  'Cybersecurity',
+  'Consulting',
+  'Photography'
+];
+
 export default function SettingsPage() {
   const { user, refreshSession, logout } = useAuth();
   const [activeTab, setActiveTab] = useState<'profile' | 'security' | 'danger'>('profile');
@@ -15,6 +29,7 @@ export default function SettingsPage() {
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
   const [avatar, setAvatar] = useState('');
+  const [industries, setIndustries] = useState<string[]>([]);
   const [profileSaving, setProfileSaving] = useState(false);
   const [profileMsg, setProfileMsg] = useState('');
 
@@ -35,6 +50,7 @@ export default function SettingsPage() {
       setName(user.name);
       setBio(user.bio || '');
       setAvatar(user.avatar || '');
+      setIndustries(user.industries || []);
     }
   }, [user]);
 
@@ -43,7 +59,7 @@ export default function SettingsPage() {
     setProfileSaving(true);
     setProfileMsg('');
     try {
-      await updateProfile({ name, bio, avatar });
+      await updateProfile({ name, bio, avatar, industries });
       await refreshSession(); // update local context
       setProfileMsg('Profile updated successfully.');
       setTimeout(() => setProfileMsg(''), 3000);
@@ -157,6 +173,29 @@ export default function SettingsPage() {
                       <label className="text-xs font-semibold text-slate-400">Bio (Optional)</label>
                       <textarea value={bio} onChange={e => setBio(e.target.value)} rows={3}
                         className="w-full bg-slate-950 border border-white/10 rounded-lg px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 resize-none" />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-xs font-semibold text-slate-400 block">Industries / Specializations</label>
+                      <div className="grid grid-cols-2 gap-2 max-h-40 overflow-y-auto border border-white/10 rounded-lg p-3 bg-slate-950">
+                        {AVAILABLE_INDUSTRIES.map((ind) => (
+                          <label key={ind} className="flex items-center gap-2 text-sm text-slate-300 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              value={ind}
+                              checked={industries.includes(ind)}
+                              onChange={(e) => {
+                                if (e.target.checked) {
+                                  setIndustries([...industries, ind]);
+                                } else {
+                                  setIndustries(industries.filter(x => x !== ind));
+                                }
+                              }}
+                              className="rounded border-white/10 bg-slate-900 text-indigo-500 focus:ring-indigo-500"
+                            />
+                            {ind}
+                          </label>
+                        ))}
+                      </div>
                     </div>
                     <div className="pt-2 flex items-center gap-4">
                       <button type="submit" disabled={profileSaving}

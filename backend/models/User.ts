@@ -13,6 +13,7 @@ export interface IUser extends Document {
   refreshTokens: string[];
   avatar?: string;
   bio?: string;
+  industries?: string[];
   createdAt: Date;
   updatedAt: Date;
   comparePassword(candidatePassword: string): Promise<boolean>;
@@ -37,6 +38,7 @@ const UserSchema: Schema<IUser> = new Schema(
     refreshTokens: { type: [String], default: [], select: false },
     avatar: { type: String, default: '' },
     bio: { type: String, default: '' },
+    industries: { type: [String], default: [] },
   },
   { timestamps: true }
 );

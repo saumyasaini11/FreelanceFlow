@@ -8,10 +8,9 @@ import { Invoice } from '../models/Invoice';
 import { logger } from '../utils/logger';
 import mongoose from 'mongoose';
 
-// PUT /api/settings/profile
 export const updateProfile = async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
-    const { name, bio, avatar } = req.body as { name?: string; bio?: string; avatar?: string };
+    const { name, bio, avatar, industries } = req.body as { name?: string; bio?: string; avatar?: string; industries?: string[] };
 
     if (!name?.trim()) {
       return res.status(400).json({ success: false, error: { message: 'Name is required.' } });
@@ -19,7 +18,7 @@ export const updateProfile = async (req: AuthRequest, res: Response, next: NextF
 
     const user = await User.findByIdAndUpdate(
       req.user!._id,
-      { name: name.trim(), bio: bio?.trim() ?? '', avatar: avatar?.trim() ?? '' },
+      { name: name.trim(), bio: bio?.trim() ?? '', avatar: avatar?.trim() ?? '', industries: industries ?? [] },
       { new: true, runValidators: true }
     ).select('-password -refreshTokens -emailVerificationToken -passwordResetToken');
 
